@@ -10,7 +10,7 @@ const imageContainer = document.getElementById('image-container');
 
 // Create a new object detection pipeline
 status.textContent = 'Loading model...';
-const detector = await pipeline('image-classification', 'nateraw/vit-base-patch16-224-in21k-food101'); 
+const detector = await pipeline('image-classification', 'nateraw/food'); 
 status.textContent = 'Ready';
 
 fileUpload.addEventListener('change', function (e) {
